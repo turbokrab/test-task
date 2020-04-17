@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Type="ElementManifest" />
+    <ProjectItemFile Source="App\e2e\protractor.conf.js" Target="App\e2e\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\favicon.ico" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\index.html" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\main.js" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\main.js.map" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\polyfills-es5.js" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\polyfills-es5.js.map" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\polyfills.js" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\polyfills.js.map" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\runtime.js" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\runtime.js.map" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\styles.js" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\styles.js.map" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\vendor.js" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+    <ProjectItemFile Source="App\dist\SPAddInAngular\vendor.js.map" Target="App\dist\SPAddInAngular\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

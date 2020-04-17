@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="4a3d571b-6327-40e5-b6c1-2e94dd88374f" Scope="Web" Title="BooksApp Feature1" Version="1.0.0.1">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Books.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.min.map" />
+    <ElementFile Location="Scripts\jquery-1.9.1.min.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.js" />
+    <ElementFile Location="Scripts\jquery-1.9.1.intellisense.js" />
+    <ElementManifest Location="Elements.xml" />
+    <ElementFile Location="App\e2e\protractor.conf.js" />
+    <ElementFile Location="App\dist\SPAddInAngular\favicon.ico" />
+    <ElementFile Location="App\dist\SPAddInAngular\index.html" />
+    <ElementFile Location="App\dist\SPAddInAngular\main.js" />
+    <ElementFile Location="App\dist\SPAddInAngular\main.js.map" />
+    <ElementFile Location="App\dist\SPAddInAngular\polyfills-es5.js" />
+    <ElementFile Location="App\dist\SPAddInAngular\polyfills-es5.js.map" />
+    <ElementFile Location="App\dist\SPAddInAngular\polyfills.js" />
+    <ElementFile Location="App\dist\SPAddInAngular\polyfills.js.map" />
+    <ElementFile Location="App\dist\SPAddInAngular\runtime.js" />
+    <ElementFile Location="App\dist\SPAddInAngular\runtime.js.map" />
+    <ElementFile Location="App\dist\SPAddInAngular\styles.js" />
+    <ElementFile Location="App\dist\SPAddInAngular\styles.js.map" />
+    <ElementFile Location="App\dist\SPAddInAngular\vendor.js" />
+    <ElementFile Location="App\dist\SPAddInAngular\vendor.js.map" />
+    <ElementManifest Location="BooksListInstance\Elements.xml" />
+    <ElementManifest Location="BooksList\Elements.xml" />
+    <ElementFile Location="BooksList\Schema.xml" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Elements.xml" />
+        <ElementManifest Location="BooksListInstance\Elements.xml" />
+        <ElementManifest Location="BooksList\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

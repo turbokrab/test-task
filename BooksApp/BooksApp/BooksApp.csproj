@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{355536E2-D134-4056-9505-8CEF71995D61}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BooksApp</RootNamespace>
+    <AssemblyName>BooksApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>11.1</MinimumOfficeToolsVersion>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{e375b3be-7ae7-4b34-b4ef-9d55b873a42a}</AppFeaturePartId>
+    <WspPartId>{1025f761-5ee5-4fed-8d14-d638bbc48a32}</WspPartId>
+    <WorkflowPartId>{e530c059-307c-4f6f-a06a-3f9496689ce3}</WorkflowPartId>
+    <CspkgPartId>{e6e2e772-6888-47df-8a09-acb2b9c8f7f5}</CspkgPartId>
+    <SqlPackagePartId>{d8ba9c14-2243-45b9-8bd8-3bfad2cd5ec8}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App\.editorconfig" />
+    <None Include="App\angular.json" />
+    <None Include="App\browserslist" />
+    <None Include="App\dist\SPAddInAngular\main.js.map" />
+    <None Include="App\dist\SPAddInAngular\polyfills-es5.js.map" />
+    <None Include="App\dist\SPAddInAngular\polyfills.js.map" />
+    <None Include="App\dist\SPAddInAngular\runtime.js.map" />
+    <None Include="App\dist\SPAddInAngular\styles.js.map" />
+    <None Include="App\dist\SPAddInAngular\vendor.js.map" />
+    <None Include="App\e2e\tsconfig.json" />
+    <None Include="App\package-lock.json" />
+    <None Include="App\package.json" />
+    <None Include="App\README.md" />
+    <None Include="App\src\assets\.gitkeep" />
+    <None Include="App\tsconfig.app.json" />
+    <None Include="App\tsconfig.json" />
+    <None Include="App\tsconfig.spec.json" />
+    <None Include="App\tslint.json" />
+    <None Include="BooksList\BooksListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f9cc0d57-ad3e-443c-8ea2-faef5d7badb7}</SharePointProjectItemId>
+    </None>
+    <None Include="BooksList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5dc4af6d-de83-4fc8-a9c2-5cccd706a396}</SharePointProjectItemId>
+    </None>
+    <None Include="Books\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{de0e6125-b392-4904-b5c5-6c1edf36c286}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f64ea30f-dd05-460e-b065-fb8e956a37aa}</SharePointProjectItemId>
+    </None>
+    <Content Include="App\.gitignore" />
+    <Content Include="App\dist\SPAddInAngular\favicon.ico" />
+    <Content Include="App\dist\SPAddInAngular\index.html" />
+    <Content Include="App\dist\SPAddInAngular\main.js" />
+    <Content Include="App\dist\SPAddInAngular\polyfills-es5.js" />
+    <Content Include="App\dist\SPAddInAngular\polyfills.js" />
+    <Content Include="App\dist\SPAddInAngular\runtime.js" />
+    <Content Include="App\dist\SPAddInAngular\styles.js" />
+    <Content Include="App\dist\SPAddInAngular\vendor.js" />
+    <Content Include="App\e2e\protractor.conf.js" />
+    <Content Include="App\karma.conf.js" />
+    <Content Include="App\src\app\app.component.css" />
+    <Content Include="App\src\app\app.component.html" />
+    <Content Include="App\src\favicon.ico" />
+    <Content Include="App\src\index.html" />
+    <Content Include="App\src\styles.css" />
+    <Content Include="BooksList\BooksListInstance\Elements.xml" />
+    <Content Include="BooksList\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="BooksList\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Books\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
+    <Content Include="Elements.xml" />
+    <Content Include="Pages\Books.aspx" />
+    <Content Include="Pages\Elements.xml" />
+    <None Include="SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{09ba9902-e44d-4647-9fc0-699a3844b522}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d8ba9c14-2243-45b9-8bd8-3bfad2cd5ec8}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{d78a8437-b1f6-4d20-97a7-ff424186892f}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{4a3d571b-6327-40e5-b6c1-2e94dd88374f}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="App\e2e\src\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="App\e2e\src\app.po.ts" />
+    <TypeScriptCompile Include="App\src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="App\src\app\app.component.ts" />
+    <TypeScriptCompile Include="App\src\app\app.module.ts" />
+    <TypeScriptCompile Include="App\src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="App\src\environments\environment.ts" />
+    <TypeScriptCompile Include="App\src\main.ts" />
+    <TypeScriptCompile Include="App\src\polyfills.ts" />
+    <TypeScriptCompile Include="App\src\test.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

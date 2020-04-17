@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="d78a8437-b1f6-4d20-97a7-ff424186892f" 
+        solutionId="d78a8437-b1f6-4d20-97a7-ff424186892f" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="BooksApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="4a3d571b-6327-40e5-b6c1-2e94dd88374f" />
+  </features>
+</package>

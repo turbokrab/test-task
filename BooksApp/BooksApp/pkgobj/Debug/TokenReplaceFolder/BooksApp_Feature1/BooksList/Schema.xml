@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="BooksList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/BooksList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+
+
+
+
+
+
+
+
+      <ContentType ID="0x0100c5c1b7ac40e54ef596858b3a37d74687" Name="ListFieldsContentType">
+        <FieldRefs>
+
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{56b915e0-bf64-46b8-b012-a38c155ef626}" Name="BookAuthor" />
+          <FieldRef ID="{7a1373be-5da5-47f4-833d-7e54f66ce7f9}" Name="BookName" />
+          <FieldRef ID="{ab14251b-25fb-4a72-8372-4c904b1c1952}" Name="Price" />
+          <FieldRef ID="{2b46cffd-1046-4369-9bc2-9e33ef93314e}" Name="BookReview" />
+          <FieldRef ID="{b3208962-a764-47f2-8c17-a55f7ebeae9a}" Name="Photo" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="BookAuthor" ID="{56b915e0-bf64-46b8-b012-a38c155ef626}" DisplayName="Book Author" Type="Text" />
+      <Field Name="BookName" ID="{7a1373be-5da5-47f4-833d-7e54f66ce7f9}" DisplayName="Book Name" Type="Text" />
+      <Field Name="Price" ID="{ab14251b-25fb-4a72-8372-4c904b1c1952}" DisplayName="Price" Type="Currency" />
+      <Field Name="BookReview" ID="{2b46cffd-1046-4369-9bc2-9e33ef93314e}" DisplayName="Book Review" Type="Note" />
+      <Field Name="Photo" ID="{b3208962-a764-47f2-8c17-a55f7ebeae9a}" DisplayName="Photo" Type="URL" />
+    </Fields>
+    <Views>
+
+
+
+
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef Name="BookAuthor" />
+          <FieldRef Name="BookName" />
+          <FieldRef Name="Price" />
+          <FieldRef Name="BookReview" />
+          <FieldRef Name="Photo" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

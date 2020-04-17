@@ -1,0 +1,4 @@
+C:\Users\max\documents\visual studio 2013\Projects\BooksApp\BooksApp\bin\Debug\BooksApp.pdb
+C:\Users\max\documents\visual studio 2013\Projects\BooksApp\BooksApp\obj\Debug\BooksApp.dll
+C:\Users\max\documents\visual studio 2013\Projects\BooksApp\BooksApp\obj\Debug\BooksApp.pdb
+C:\Users\max\documents\visual studio 2013\Projects\BooksApp\BooksApp\obj\Debug\BooksApp.csprojResolveAssemblyReference.cache

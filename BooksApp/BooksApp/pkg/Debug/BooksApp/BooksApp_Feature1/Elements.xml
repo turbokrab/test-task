@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="App\e2e\protractor.conf.js" Url="App/e2e/protractor.conf.js" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\favicon.ico" Url="App/dist/SPAddInAngular/favicon.ico" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\index.html" Url="App/dist/SPAddInAngular/index.html" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\main.js" Url="App/dist/SPAddInAngular/main.js" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\main.js.map" Url="App/dist/SPAddInAngular/main.js.map" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\polyfills-es5.js" Url="App/dist/SPAddInAngular/polyfills-es5.js" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\polyfills-es5.js.map" Url="App/dist/SPAddInAngular/polyfills-es5.js.map" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\polyfills.js" Url="App/dist/SPAddInAngular/polyfills.js" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\polyfills.js.map" Url="App/dist/SPAddInAngular/polyfills.js.map" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\runtime.js" Url="App/dist/SPAddInAngular/runtime.js" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\runtime.js.map" Url="App/dist/SPAddInAngular/runtime.js.map" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\styles.js" Url="App/dist/SPAddInAngular/styles.js" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\styles.js.map" Url="App/dist/SPAddInAngular/styles.js.map" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\vendor.js" Url="App/dist/SPAddInAngular/vendor.js" ReplaceContent="TRUE" />
+    <File Path="App\dist\SPAddInAngular\vendor.js.map" Url="App/dist/SPAddInAngular/vendor.js.map" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

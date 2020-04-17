@@ -1,0 +1,50 @@
+<br /><br /><br />
+<mat-form-field floatLabel="always" style="width: 30%;">
+    <input matInput (keyup)="applyFilter($event)" placeholder="Filter">
+</mat-form-field>
+<br />
+<button mat-raised-button (click)="addBook()">Add book</button>
+
+<table mat-table [dataSource]="booksDataSource" matSort>
+
+    <ng-container matColumnDef="Author">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Author </th>
+        <td mat-cell *matCellDef="let row" (dblclick)="updateBook(row.Id)" (click)="singleClick()">
+            {{row.BookAuthor}}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Book Name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Book Name </th>
+        <td mat-cell *matCellDef="let row" (dblclick)="updateBook(row.Id)" (click)="singleClick()"> {{row.BookName}}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Price">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Price </th>
+        <td mat-cell *matCellDef="let row" (dblclick)="updateBook(row.Id)" (click)="singleClick()"> {{row.Price}}$ </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Book Review">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Book Review </th>
+        <td mat-cell *matCellDef="let row" (dblclick)="updateBook(row.Id)" (click)="singleClick()"> {{row.BookReview}}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Photo">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Photo </th>
+        <td mat-cell *matCellDef="let row" (dblclick)="updateBook(row.Id)" (click)="singleClick()"><a
+                href="{{row.Photo?.Url}}">{{row.Photo?.Description}}</a> </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Delete book">
+        <th mat-header-cell *matHeaderCellDef> </th>
+        <td mat-cell *matCellDef="let row"><button mat-raised-button (click)="deleteBook(row.Id)">Delete</button></td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumnsBooks"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumnsBooks;"></tr>
+
+</table>
+
+<mat-paginator [pageSizeOptions]="[5, 10, 25]" showFirstLastButtons></mat-paginator>

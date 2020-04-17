@@ -1,0 +1,49 @@
+<h1 mat-dialog-title>{{data.header}}</h1>
+<div mat-dialog-content>
+    <form [formGroup]="popUpDialogFormGroup">
+        <div fxFlex>
+            <mat-form-field floatLabel="always">
+                <input matInput placeholder="Book Author" formControlName="BookAuthor">
+            </mat-form-field>
+        </div>
+        <div fxFlex>
+            <mat-form-field floatLabel="always">
+                <input matInput placeholder="Book Name" formControlName="BookName">
+            </mat-form-field>
+        </div>
+        <div fxFlex>
+            <mat-form-field floatLabel="always">
+                <input matInput placeholder="Price" formControlName="Price" required>
+                <mat-error
+                    *ngIf="popUpDialogFormGroup.get('Price').hasError('pattern') && !popUpDialogFormGroup.get('Price').hasError('required')">
+                    <strong>Only numbers allowed</strong>
+                </mat-error>
+                <mat-error *ngIf="popUpDialogFormGroup.get('Price').hasError('required')">
+                    <strong>Required field</strong>
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div fxFlex>
+            <mat-form-field floatLabel="always">
+                <textarea matInput placeholder="Book Review" formControlName="BookReview"></textarea>
+            </mat-form-field>
+        </div>
+
+        <div fxFlex>
+            <mat-form-field floatLabel="always">
+                <input matInput placeholder="Photo Url" type="url" formControlName="PhotoUrl">
+                <mat-error *ngIf="popUpDialogFormGroup.get('PhotoUrl').hasError('pattern') ">
+                    <strong>Enter valid URL</strong>
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field floatLabel="always">
+                <input matInput placeholder="Photo Description" formControlName="PhotoDescription">
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="okDialog()" [disabled]="!popUpDialogFormGroup.valid">Оk</button>
+    <button mat-button (click)="closeDialog()">Cancel</button>
+</div>

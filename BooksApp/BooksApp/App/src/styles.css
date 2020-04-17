@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.mat-table {
+  width: 100%;
+}
+
+.mat-header-cell {
+  color: black;
+}
+
+.mat-sort-header-button:hover {
+  background-color: inherit;
+}
+.mat-form-field {
+  font-size: 16px;
+  width: 100%;
+}
+
+.basic-container {
+  padding: 30px;
+}
